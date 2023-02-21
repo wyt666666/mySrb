@@ -1,0 +1,19 @@
+server:
+  port: 8130 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: service-oss # 服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.73.128:8848  # nacos服务地址
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    keyId: LTAI5tNABCKMbLBQXHn8RmNM
+    keySecret: KgPicznDTJtAbR9WlaN7zyfclVAA1f
+    bucketName: srb-file-mysrb
